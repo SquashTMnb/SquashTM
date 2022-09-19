@@ -49,9 +49,9 @@ Weighing Test
     ${EditWeightOffsetX} =    evaluate    ${EditWeightPosX}-${LibBadgePosX}
     ${EditWeightOffsetY} =    evaluate    ${EditWeightPosY}-${LibBadgePosY}
     Click A Point    ${EditWeightOffset_x}    ${EditWeightOffset_y}    #pointage de la zone de saisie du poids
-    Send Keys    1    0    0    0    0    \ue007        #saisie du poids
+    Send Keys    1    0    0    0    0    \ue007                        #saisie du poids
     
-    Wait For And Click Element       accessibility_id=BTCaptureExitWeight    5           #capture du poids
+    Wait For And Click Element       accessibility_id=BTCaptureExitWeight    5    #capture du poids
     Wait For And Click Element       accessibility_id=BTTerminateWeight    5    #enregistrement du camion BTValidateEntryWeight
 
 #Output Application
